@@ -117,4 +117,4 @@ format-links: [pdf]
 -   **Regional Impact:** Enhanced Vanuatu’s government efficiency and data accessibility through advanced analytics, visualization, and database solutions, supporting the Smart Cable Project’s focus on innovative, technology-driven solutions for Pacific Islands.
 -   **Career Vision:** Aim to master advanced data science techniques to drive policy innovation in Vanuatu, applying skills in machine learning, data mining, and strategic decision-making through dashboards to contribute to sustainable development and digital infrastructure growth in the Pacific region.
 
-**Note:** This CV was built using R Quarto. The source code is available on <https://github.com/htevilili-1991/cv>. The online HTML version of this CV is accessible at <https://htevilili-1991.github.io/cv-html/>
+**Note:** This CV was built using R Quarto. The source code is available on <https://github.com/htevilili-1991/CV2>. The online HTML version of this CV is accessible at <https://htevilili-1991.github.io/CV2/>
