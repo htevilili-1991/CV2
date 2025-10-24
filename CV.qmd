@@ -1,0 +1,120 @@
+---
+title: "Curriculum Vitae"
+format:
+  pdf:
+    pdf-engine: xelatex
+    number-sections: true
+    keep-tex: true
+css: resume.css
+format-links: [pdf]
+---
+
+::: contact-block
+**Name of Expert:** Herman Tevilili\
+**Email:** [htevilili\@vanuatu.gov.vu](mailto:htevilili@vanuatu.gov.vu)\
+**Phone:** (678) 7693749\
+**Date of Birth:** 21/10/1991\
+**Country of Citizenship/Residence:** Vanuatu
+:::
+
+## Education
+
+### Degree
+
+**Bachelor's Degree in Economic and Social Administration**\
+*Université Toulouse 1 Capitole, France* [*2019 --- 2021*]{.cvdate}\
+*Obtained*
+
+-   Multidisciplinary program combining economics, computer science, and quantitative methods, enhancing skills in statistical analysis, programming, and data-driven decision-making for improving government processes and efficiency in Pacific Island contexts.
+
+**Bachelor of Mathematics and Computer Science**\
+*New Caledonia University, New Caledonia* [*2013 --- 2015*]{.cvdate}\
+*Not Obtained*\
+
+-   Developed foundational skills in programming (Python, SQL) and database management, enabling expertise in web development frameworks (Laravel, React.js) and data analytics tools (R, Shiny, Tableau, Power BI), critical for advanced data science applications.
+
+### Certificate
+
+**Certificate in Machine Learning and GIS for Land Cover Estimation**\
+*United Nations ESCAP* [*APR 20224*]{.cvdate}\
+
+
+## Experience Employment Record Relevant to the Assignment {style="page-break-before: always"}
+
+### Statistician - Gender, Justice and Culture
+
+***Vanuatu Bureau of Statistics*** [*Feb 2022 --- Present*]{.cvdate}\
+
+-   Leveraged R and SQL to manage and analyze data for the 2020 National Population and Housing Census, producing tabulations and reports to support government decision-making, including remuneration benchmarking and incentive-related insights.[^1]
+-   Led integration of Census and Civil Registration and Vital Statistics (CRVS) data for a Ministry of Finance Cash Transfer project pilot, using reproducible workflows (RAP, Git) and probabilistic matching techniques.
+-   Collaborated with a technical advisor to develop Vanuatu Constituency Profiles in R, ensuring data quality and linkage across datasets for streamlined government reporting.
+-   Expertise in designing interactive dashboards using R Shiny, Tableau, and Power BI, incorporating tools like highcharter and Leaflet to create filterable, user-friendly visualizations for policy-relevant data, enhancing decision-making in Vanuatu’s public sector.
+-   Spearheaded digitization of the Public Service Commission Institutional Capacity Assessment using MS Forms, Kobotools, R, and SQL, with reproducible reporting via R Quarto and Latex[^2], enhancing data accessibility for remuneration analysis.
+-   Spearheaded digitization of surveys for the Public Service Commission Customer Satisfaction survey.
+-   Developed the Labour Mobility Schemes Registry (LMR) [^3], which is a Laravel (backend) and React.js (frontend) application with PostgreSQL[^4] integration for managing and visualizing labour mobility data, leveraging React.js as a single-page application (SPA) to load content dynamically without refreshing the page, demonstrating web programming and database application development.
+-   Created the NSDP Dashboard[^5] using R and Shiny for an internal staff competition, providing interactive visualizations (e.g., highcharter, Leaflet) and filterable data on households affected by shocks, applicable to statistical analysis for remuneration design.
+-   Developed a new VBoS website using Drupal[^6], later switched to Joomla due to IT staff maintenance limitations, showcasing web development skills.
+-   Developed the Culture Information System[^7] for the Vanuatu Cultural Center using CodeIgniter and MySQL, handed over to the Department of Communications and Digital Transformation for hosting.
+-   Mentored VBoS staff in statistical tools, R,fostering capacity building for sustainable operations and team collaboration.
+
+**Overall Objective:** Most tasks listed above were not part of my job description but rather self-initiated and approved by the VBoS executive[^8], while some were requested by other departments with the Chief Statistician nominating me to execute them[^9]. All personal initiative were strategically aligned to advance digital transformation within the Vanuatu Bureau of Statistics, enhancing government efficiency, accessibility, and innovation through technology-driven solutions, with a focus on data analysis for public service remuneration and human resource management.
+
+[^1]: The 2020 National Population and Housing Census Volume 1 Version 2, with figures without correction factors.
+[^2]: LaTeX is a powerful markup language for document preparation. LaTeX automates typesetting for consistent, professional formatting.
+[^3]: Repo: <https://github.com/htevilili-1991/Labour-Mobility-Registry>. View LMR (credentials required to login): <https://lmr.laravel.cloud/> .
+[^4]: Initially developed with MySQL, but Laravel's flexibility enabled an easy migration to PostgreSQL.
+[^5]: Repo: <https://github.com/htevilili1991/NSDP-Dashbaord> . View dashboard: <https://herman-tevilili.shinyapps.io/NSDP-Dashboard/>
+[^6]: Screenshot: <https://freeimage.host/i/KwwzI2a>
+[^7]: Development completed and handed over to Department of Communications and Digital Transformation for hosting.
+[^8]: Labour Mobility Schemes Registry, VBoS website using Drupal, Culture Information System
+[^9]: Cash Transfer data integration, PSC Institutional Capacity Assessment digitization and automation of report writing, PSC Customer Satisfaction survey
+
+### Statistician Intern
+
+***Vanuatu Bureau of Statistics*** [*Jun 2021 --- Aug 2021*]{.cvdate}\
+
+-   Researched inferential statistics applications for national statistics offices, producing reproducible reports using R, SQL, and Adobe InDesign, aligning with SPC’s technical reporting standards.
+-   Demonstrated data integration techniques, enhancing statistical workflows for regional development.
+
+### Value-Added Services & Billing Technician
+
+***Telecom Vanuatu Ltd*** [*Jun 2021 --- Aug 2021*]{.cvdate}\
+*Contact details available upon request*
+
+-   Operated and maintained systems for statistics/reporting, billing, and provisioning, ensuring accurate data handling and reporting for financial reconciliation and incentive analysis.
+-   Provided support to internal users of billing, provisioning, and statistics systems, troubleshooting faults and liaising with system suppliers for corrections, enhancing operational efficiency in compensation-related data management.
+-   Ensured all telecom services offered by TVL were charged correctly without breaks or errors, using SQL queries for data integrity checks relevant to remuneration benchmarking.
+-   Maintained TVL ERP data warehouse reporting system (database: Oracle) and designed/administered scheduled reports for Finance, Marketing, Technical, and other departments using BusinessObjects (BO), supporting statistical analysis and reporting for incentive design.
+-   Troubleshot issues in cases of faults, identifying errors and implementing new offers, packages, and price plans, with direct applicability to job evaluation and remuneration adjustments.
+-   Ran TVL mid-month and end-of-month billing reports for Finance department reconciliations, demonstrating proficiency in generating precise financial and compensation data reports.
+
+### IT Technician, Web Developer & Tutor
+
+***Computer Network Services*** [*2013 --- 2015*]{.cvdate}\
+*Contact details available upon request*
+
+-   Designed dynamic websites with databases (HTML, CSS, JavaScript, PHP), integrating data systems for efficient management.\
+-   Tutored individuals in IT and data management, building technical capacity for diverse teams, aligning with SPC’s training requirements.
+
+## Language Skills
+
+| Language | Written Proficiency | Oral Proficiency |
+|----------|---------------------|------------------|
+| English  | Fluent              | Fluent           |
+| French   | Proficient          | Proficient       |
+| Bislama  | Moderate            | Fluent           |
+
+## Interpersonal Skills and Cultural Awareness
+
+-   Demonstrated ability to work effectively with diverse teams across national and cultural backgrounds, fostering collaboration in multicultural settings as required by SPC’s regional focus.
+
+## Adequacy for the Smart Cable Scholarship
+
+-   **Ni-Vanuatu Commitment:** As a Ni-Vanuatu citizen, I am dedicated to advancing Vanuatu’s development through data science, leveraging JCU’s Master of Data Science (Professional) to address Pacific Island challenges, such as socioeconomic policy and digital transformation, aligning with the Smart Cable Project’s goals.
+-   **Academic Merit:** Bachelor’s degree in Economic and Social Administration with a quantitative focus, complemented by training in mathematics, computer science, and programming (R, Python, SQL, Stata), meeting JCU’s entry requirements for advanced data science studies.
+-   **Professional Experience:** Over five years of experience in statistical analysis, dashboard development (R Shiny, Tableau, Power BI), and database management at Vanuatu Bureau of Statistics, demonstrating readiness for advanced data analytics, visualization, and management.
+-   **Technical Proficiency:** Expertise in R, Python, SQL, Stata, and web frameworks (Laravel, React.js), with proficiency in dashboard tools (R Shiny, Tableau, Power BI) and databases (PostgreSQL, MySQL), preparing me for coursework in programming, data mining, machine learning, and visualization, including SAS and AWS components.
+-   **Regional Impact:** Enhanced Vanuatu’s government efficiency and data accessibility through advanced analytics, visualization, and database solutions, supporting the Smart Cable Project’s focus on innovative, technology-driven solutions for Pacific Islands.
+-   **Career Vision:** Aim to master advanced data science techniques to drive policy innovation in Vanuatu, applying skills in machine learning, data mining, and strategic decision-making through dashboards to contribute to sustainable development and digital infrastructure growth in the Pacific region.
+
+**Note:** This CV was built using R Quarto. The source code is available on <https://github.com/htevilili-1991/cv>. The online HTML version of this CV is accessible at <https://htevilili-1991.github.io/cv-html/>

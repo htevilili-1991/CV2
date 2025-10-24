@@ -1,0 +1,492 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrartcl}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Curriculum Vitae},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Curriculum Vitae}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+
+
+\textbf{Name of Expert:} Herman Tevilili\\
+\textbf{Email:}
+\href{mailto:htevilili@vanuatu.gov.vu}{\nolinkurl{htevilili@vanuatu.gov.vu}}\\
+\textbf{Phone:} (678) 7693749\\
+\textbf{Date of Birth:} 21/10/1991\\
+\textbf{Country of Citizenship/Residence:} Vanuatu
+
+\section{Education}\label{education}
+
+\textbf{Bachelor's Degree in Economic and Social Administration}\\
+\emph{Université Toulouse 1 Capitole, France} {\emph{2019 --- 2021}}\\
+\emph{Obtained}
+
+\begin{itemize}
+\tightlist
+\item
+  Multidisciplinary program combining economics, computer science, and
+  quantitative methods, enhancing skills in statistical analysis,
+  programming, and data-driven decision-making for improving government
+  processes and efficiency in Pacific Island contexts.
+\end{itemize}
+
+\textbf{Bachelor of Mathematics and Computer Science}\\
+\emph{New Caledonia University, New Caledonia} {\emph{2013 --- 2015}}\\
+\emph{Not Obtained}\\
+
+\begin{itemize}
+\tightlist
+\item
+  Developed foundational programming skills in database management and
+  system optimization, enabling a smooth transition to mastering
+  languages like R, Python, PHP, and SQL, as well as frameworks and
+  tools (Laravel, CodeIgniter, Vue.JS, React.JS, Drupal, Joomla) for
+  developing web applications and database solutions.
+\end{itemize}
+
+\section{Experience Employment Record Relevant to the
+Assignment}\label{experience-employment-record-relevant-to-the-assignment}
+
+\subsection{Statistician - Gender, Justice and
+Culture}\label{statistician---gender-justice-and-culture}
+
+\textbf{\emph{Vanuatu Bureau of Statistics}} {\emph{Feb 2022 ---
+Present}}\\
+
+\begin{itemize}
+\tightlist
+\item
+  Leveraged R and SQL to manage and analyze data for the 2020 National
+  Population and Housing Census, producing tabulations and reports to
+  support government decision-making, including remuneration
+  benchmarking and incentive-related insights.\footnote{The 2020
+    National Population and Housing Census Volume 1 Version 2, with
+    figures without correction factors.}
+\item
+  Led integration of Census and Civil Registration and Vital Statistics
+  (CRVS) data for a Ministry of Finance project, using reproducible
+  workflows (RAP, Git) and probabilistic matching techniques.
+\item
+  Developed Vanuatu Constituency Profiles in R, ensuring data quality
+  and linkage across datasets for streamlined government reporting.
+\item
+  Spearheaded digitization of surveys for the Public Service Commission
+  (e.g., Institutional Capacity Assessment) using MS Forms, Kobotools,
+  R, and SQL, with reproducible reporting via R Quarto and
+  Latex\footnote{LaTeX is a powerful markup language for document
+    preparation. LaTeX automates typesetting for consistent,
+    professional formatting.}, enhancing data accessibility for
+  remuneration analysis.
+\item
+  Developed the Labour Mobility Schemes Registry (LMR) \footnote{Repo:
+    \url{https://github.com/htevilili-1991/Labour-Mobility-Registry}.
+    View LMR (credentials required to login):
+    \url{https://lmr.laravel.cloud/} .}, which is a Laravel (backend)
+  and React.js (frontend) application with PostgreSQL\footnote{Initially
+    developed with MySQL, but Laravel's flexibility enabled an easy
+    migration to PostgreSQL.} integration for managing and visualizing
+  labour mobility data, leveraging React.js as a single-page application
+  (SPA) to load content dynamically without refreshing the page,
+  demonstrating web programming and database application development.
+\item
+  Designed and implemented the VBoS Information Management System (VIMS)
+  using CodeIgniter and MySQL, integrating HR, inventory, asset, and
+  document management, with ongoing staff training to support government
+  processes.
+\item
+  Created the NSDP Dashboard\footnote{Repo:
+    \url{https://github.com/htevilili1991/NSDP-Dashbaord} . View
+    dashboard:
+    \url{https://herman-tevilili.shinyapps.io/NSDP-Dashboard/}} using R
+  and Shiny for an internal staff competition, providing interactive
+  visualizations (e.g., highcharter, Leaflet) and filterable data on
+  households affected by shocks, applicable to statistical analysis for
+  remuneration design.
+\item
+  Developed a new VBoS website using Drupal\footnote{Screenshot:
+    \url{https://freeimage.host/i/KwwzI2a}}, later switched to Joomla
+  due to IT staff maintenance limitations, showcasing web development
+  skills.
+\item
+  Developed the Culture Information System\footnote{Development
+    completed and handed over to Department of Communications and
+    Digital Transformation for hosting.} for the Vanuatu Cultural Center
+  using CodeIgniter and MySQL, handed over to the Department of
+  Communications and Digital Transformation for hosting.
+\item
+  Mentored VBoS staff in statistical tools (R, SQL, Shiny) and web
+  development workflows, fostering capacity building for sustainable
+  operations and team collaboration.
+\end{itemize}
+
+\textbf{Overall Objective:} All tasks undertaken are strategically
+aligned to advance digital transformation within the Vanuatu Bureau of
+Statistics, enhancing government efficiency, accessibility, and
+innovation through technology-driven solutions.
+
+\subsection{Statistician Intern}\label{statistician-intern}
+
+\textbf{\emph{Vanuatu Bureau of Statistics}} {\emph{Jun 2021 --- Aug
+2021}}\\
+
+\begin{itemize}
+\tightlist
+\item
+  Researched inferential statistics applications for national statistics
+  offices, producing reproducible reports using R, SQL, and Adobe
+  InDesign, aligning with SPC's technical reporting standards.
+\item
+  Demonstrated data integration techniques, enhancing statistical
+  workflows for regional development.
+\end{itemize}
+
+\subsection{Value-Added Services \& Billing
+Technician}\label{value-added-services-billing-technician}
+
+\textbf{\emph{Telecom Vanuatu Ltd}} {\emph{Jun 2021 --- Aug 2021}}\\
+\emph{Contact details available upon request}
+
+\begin{itemize}
+\tightlist
+\item
+  Operated and maintained systems for statistics/reporting, billing, and
+  provisioning, ensuring accurate data handling and reporting for
+  financial reconciliation and incentive analysis.
+\item
+  Provided support to internal users of billing, provisioning, and
+  statistics systems, troubleshooting faults and liaising with system
+  suppliers for corrections, enhancing operational efficiency in
+  compensation-related data management.
+\item
+  Ensured all telecom services offered by TVL were charged correctly
+  without breaks or errors, using SQL queries for data integrity checks
+  relevant to remuneration benchmarking.
+\item
+  Maintained TVL ERP data warehouse reporting system (database: Oracle)
+  and designed/administered scheduled reports for Finance, Marketing,
+  Technical, and other departments using BusinessObjects (BO),
+  supporting statistical analysis and reporting for incentive design.
+\item
+  Troubleshot issues in cases of faults, identifying errors and
+  implementing new offers, packages, and price plans, with direct
+  applicability to job evaluation and remuneration adjustments.
+\item
+  Ran TVL mid-month and end-of-month billing reports for Finance
+  department reconciliations, demonstrating proficiency in generating
+  precise financial and compensation data reports.
+\end{itemize}
+
+\subsection{IT Technician, Web Developer \&
+Tutor}\label{it-technician-web-developer-tutor}
+
+\textbf{\emph{Computer Network Services}} {\emph{2013 --- 2015}}\\
+\emph{Contact details available upon request}
+
+\begin{itemize}
+\tightlist
+\item
+  Designed dynamic websites with databases (HTML, CSS, JavaScript, PHP),
+  integrating data systems for efficient management.\\
+\item
+  Tutored individuals in IT and data management, building technical
+  capacity for diverse teams, aligning with SPC's training requirements.
+\end{itemize}
+
+\section{Language Skills}\label{language-skills}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Language & Written Proficiency & Oral Proficiency \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+English & Fluent & Fluent \\
+French & Proficient & Proficient \\
+Bislama & Moderate & Fluent \\
+\end{longtable}
+
+\section{Interpersonal Skills and Cultural
+Awareness}\label{interpersonal-skills-and-cultural-awareness}
+
+\begin{itemize}
+\tightlist
+\item
+  Demonstrated ability to work effectively with diverse teams across
+  national and cultural backgrounds, fostering collaboration in
+  multicultural settings as required by SPC's regional focus.
+\end{itemize}
+
+\section{Adequacy for the Position}\label{adequacy-for-the-position}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Qualifications:} Bachelor's degree in Economic and Social
+  Administration with a strong quantitative focus, complemented by
+  advanced training in mathematics, computer science, and programming,
+  meeting the job requirement for a degree in Economics, Finance,
+  Business Administration, Human Resource Management, or related fields.
+  Extensive experience in statistical analysis, including regression
+  modeling, probabilistic matching, and data visualization, along with
+  proficiency in R, SQL, and Shiny, compensates for any specific
+  specialization and supports remuneration benchmarking and job
+  evaluation.
+\item
+  \textbf{Experience:} Over five years of experience in roles involving
+  advanced statistical analysis, data integration, and government
+  process improvements, including leading the 2020 Census data analysis
+  and CRVS integration at VBoS using R and SQL, and managing billing
+  data analytics at Vodafone Vanuatu with BusinessObjects and Oracle
+  databases. This experience directly aligns with the need for expertise
+  in employment remuneration, job evaluation using point method systems,
+  and knowledge of Government Smart Stream System through data-driven
+  projects.
+\item
+  \textbf{Thinking Style:} Practical problem solver with a proven
+  ability to apply statistical and analytical methods, demonstrated by
+  conducting complex data analyses (e.g., probabilistic matching for
+  Census-CRVS linkage), optimizing workflows with R, SQL, and Shiny,
+  developing interactive dashboards like the NSDP Dashboard for
+  remuneration insights, and designing database systems, ensuring
+  effectiveness in remuneration benchmarking, incentive design, and job
+  evaluation.
+\item
+  \textbf{Communication and Interpersonal Skills:} Strong written and
+  oral communication skills, evidenced by producing reproducible
+  statistical reports with R Quarto and LaTeX, mentoring VBoS staff in R
+  and SQL for data analysis, and collaborating with diverse teams on
+  projects like the PSC Institutional Capacity Assessment and NSDP
+  Dashboard, showcasing a team-player approach with honesty and
+  trustworthiness in handling sensitive remuneration data.
+\item
+  \textbf{Behavioral Competencies:} Self-directed and time-driven, as
+  shown by leading statistical analyses and database development under
+  tight deadlines (e.g., Census data integration, Vodafone billing
+  reports), with a reliable and honest character demonstrated through
+  ongoing staff training and the creation of sustainable analytical
+  tools for government use.
+\item
+  \textbf{Language Skills:} Fluent in English (written and oral),
+  proficient in French, and fluent in oral Bislama with moderate writing
+  skills, meeting the job's language requirements and enabling effective
+  communication across diverse government agencies.
+\end{itemize}
+
+\section{Reference to Prior Work/Assignments that Best Illustrates
+Capability to Handle the Assigned
+Tasks}\label{reference-to-prior-workassignments-that-best-illustrates-capability-to-handle-the-assigned-tasks}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Labour Mobility Schemes Registry (LMR):}\\
+  Developed a web application using Laravel (backend) and React.js
+  (frontend) with PostgreSQL integration, featuring dynamic content
+  loading as a single-page application (SPA), demonstrating advanced web
+  programming, database design, and process optimization for managing
+  labour mobility data effectively.
+\item
+  \textbf{NSDP Dashboard (VBoS, 2024):}\\
+  Created an R Shiny-based dashboard with interactive visualizations
+  using \texttt{highcharter} and Leaflet, enabling efficient data
+  analysis for household shock data, showcasing innovative use of
+  programming tools to enhance government productivity and reporting.
+\item
+  \textbf{VBoS Information Management System (VIMS) (VBoS, 2025-Present,
+  Implementation Ongoing):}\\
+  Designed a system with CodeIgniter and MySQL to integrate HR,
+  inventory, asset, and document data, with ongoing staff training,
+  illustrating expertise in developing modular database applications and
+  building capacity for streamlined government operations.
+\item
+  \textbf{Culture Information System (VBoS, Completed 2025):}\\
+  Built using CodeIgniter and MySQL for the Vanuatu Cultural Center,
+  handed over to DCDT for hosting, highlighting proficiency in creating
+  database-driven IT solutions to support government agency processes
+  and collaboration.
+\end{itemize}
+
+\section{Certification}\label{certification}
+
+I, the undersigned, certify that to the best of my knowledge and belief,
+this CV correctly describes myself, my qualifications, and my
+experience, and I am available until 31 December 2027 to undertake the
+assignment in case of an award. I understand that any misstatement or
+misrepresentation described herein may lead to my disqualification or
+dismissal by the SPC.
+
+\textbf{Name:} Herman Tevilili\\
+\textbf{Signature:}
+\includegraphics[width=1.04167in,height=\textheight,keepaspectratio]{signature.png}\\
+\textbf{Date:} 10/10/2025
+
+\textbf{Note:} This CV was built using R Quarto. The source code is
+available on \url{https://github.com/htevilili-1991/cv}. The online HTML
+version of this CV is accessible at
+\url{https://htevilili-1991.github.io/cv-html/}
+
+
+
+
+\end{document}

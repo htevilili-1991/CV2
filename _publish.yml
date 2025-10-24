@@ -1,0 +1,4 @@
+- source: Resume.qmd
+  quarto-pub:
+    - id: a179238e-dfdc-499b-aafc-cfb35a5e4417
+      url: 'https://htevilili1991.quarto.pub/curriculum-vitae'

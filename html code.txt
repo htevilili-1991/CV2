@@ -1,0 +1,5 @@
+  html:
+    toc: true
+    number-sections: true
+    code-fold: true
+    self-contained: true
